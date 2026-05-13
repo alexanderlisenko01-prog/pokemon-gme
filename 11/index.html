@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נחש את הפוקימון</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+<body>
+    <div class="game-shell">
+        <h1>משחק נחש את הפוקימון</h1>
+        <p>בחר את שם הפוקימון מתוך ארבע אפשרויות.</p>
+
+        <div class="pokemon-card">
+            <div class="pokemon-image-wrap">
+                <img id="pokemonImage" src="" alt="Pokemon silhouette">
+            </div>
+            <div class="pokemon-info">
+                <p id="messageText" class="message"></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div id="optionsGrid" class="options-grid"></div>
+            <button id="nextButton">הבא</button>
+        </div>
+
+        <div class="status-row">
+            <div class="status-item">
+                <span>ניסיון:</span>
+                <span id="triesCount">0</span>
+            </div>
+            <div class="status-item">
+                <span>נכון:</span>
+                <span id="scoreCount">0</span>
+            </div>
+        </div>
+
+        <div class="correct-list-shell">
+            <h2>ספר הפוקימונים הנכונים</h2>
+            <ul id="correctList" class="correct-list"></ul>
+        </div>
+
+        <div class="footer">
+            <p>מקור נתונים: <a href="https://pokeapi.co/api/v2/pokemon" target="_blank">PokeAPI</a></p>
+        </div>
+    </div>
+
+    <script src="11.js"></script>
+</body>
+</html>
